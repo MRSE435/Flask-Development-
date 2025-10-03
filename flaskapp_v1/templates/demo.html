@@ -13,6 +13,8 @@
     .banner {
       width: 100vw;
       height: 350px;
+      object-fit: cover;
+      
     }
 
     .job-box {
@@ -24,6 +26,7 @@
     
      display: flex;
      justify-content: space-between;
+    
     
     
     }
@@ -45,13 +48,25 @@
       color: skyblue;
       font-size: 20px;
       border: 3px solid rgb(75, 75, 118);
-      background-color: white;
-     transform: translateX(-890px) translateY(20px);
+     margin-right: 890px;
+     margin-top: 20px;
+      background-color: white;cursor: pointer;
+
+    
+
     }
+    .btn:hover {
+  background-color: rgb(240, 248, 255); /* light background on hover */
+}
+
+.btn:active {
+  transform: scale(0.95);   /* button shrinks a bit when clicked */
+  background-color: rgb(220, 235, 250); /* slightly darker color */
+}
   </style>
 </head>
 
-<body>
+
 
   <body>
     <h1>FLASK TUTORIAL</h1>
@@ -72,6 +87,5 @@
   </body>
 
 
-</body>
 
 </html>
